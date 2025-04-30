@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Patient Registration Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="patientform.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container my-4">
+        <h2 class="header text-center">
+            Design and Implementation of an Advanced Healthcare Database
+            System: Optimizing Data Storage, Management, and Analytical Insights for
+            Esophageal Cancer Treatment Outcomes
+        </h2>
+        <form action="http://localhost:3600/submitPatient" method="POST" class="needs-validation" novalidate>
+
+            <div class="row">
+                <!-- Patient Barcode -->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="patient_barcode">Patient Barcode</label>
+                        <input type="text" class="form-control" id="patient_barcode" name="patient_barcode" placeholder="Enter Patient Barcode" required>
+                    </div>
+                </div>
+                <!-- Days to Birth -->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="days_to_birth">Days to Birth</label>
+                        <input type="number" class="form-control" id="days_to_birth" name="days_to_birth" placeholder="Enter days (e.g., -10000)" required>
+                    </div>
+                </div>
+                <!-- Country of Birth -->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="country_of_birth">Country of Birth</label>
+                        <input type="text" class="form-control" id="country_of_birth" name="country_of_birth" placeholder="Enter Country" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- BCR Patient UUID -->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="bcr_patient_uuid">BCR Patient UUID</label>
+                        <input type="text" class="form-control" id="bcr_patient_uuid" name="bcr_patient_uuid" placeholder="Enter UUID" required>
+                    </div>
+                </div>
+                <!-- Informed Consent Verified -->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="informed_consent_verified">Informed Consent Verified</label>
+                        <select class="form-control" id="informed_consent_verified" name="informed_consent_verified" required>
+                            <option value="">Choose...</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Gender -->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select class="form-control" id="gender" name="gender" required>
+                            <option value="">Choose...</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Height -->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="height">Height (in cm)</label>
+                        <input type="number" step="0.01" class="form-control" id="height" name="height" placeholder="Enter height (e.g., 170)">
+                    </div>
+                </div>
+                <!-- Weight -->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="weight">Weight (in kg)</label>
+                        <input type="number" step="0.01" class="form-control" id="weight" name="weight" placeholder="Enter weight (e.g., 70)">
+                    </div>
+                </div>
+                <!-- Tobacco Smoking History -->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="tobacco_smoking_history">Tobacco Smoking History</label>
+                        <input type="text" class="form-control" id="tobacco_smoking_history" name="tobacco_smoking_history" placeholder="e.g., Never, Former Smoker">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Age Began Smoking -->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="age_began_smoking_in_years">Age Began Smoking</label>
+                        <input type="number" class="form-control" id="age_began_smoking_in_years" name="age_began_smoking_in_years" placeholder="Enter age">
+                    </div>
+                </div>
+                <!-- Stopped Smoking Year -->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="stopped_smoking_year">Stopped Smoking Year</label>
+                        <input type="number" class="form-control" id="stopped_smoking_year" name="stopped_smoking_year" placeholder="Enter year">
+                    </div>
+                </div>
+                <!-- Number of Pack Years Smoked -->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="number_pack_years_smoked">Number of Pack Years Smoked</label>
+                        <input type="number" step="0.01" class="form-control" id="number_pack_years_smoked" name="number_pack_years_smoked" placeholder="Enter number">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Alcohol History Documented -->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="alcohol_history_documented">Alcohol History Documented</label>
+                        <select class="form-control" id="alcohol_history_documented" name="alcohol_history_documented">
+                            <option value="">Choose...</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Frequency of Alcohol Consumption -->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="frequency_of_alcohol_consumption">Frequency of Alcohol Consumption</label>
+                        <input type="text" class="form-control" id="frequency_of_alcohol_consumption" name="frequency_of_alcohol_consumption" placeholder="e.g., Daily, Weekly">
+                    </div>
+                </div>
+                <!-- Amount of Alcohol Consumption Per Day -->
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="amount_of_alcohol_consumption_per_day">Amount of Alcohol Consumed Per Day</label>
+                        <input type="number" step="0.01" class="form-control" id="amount_of_alcohol_consumption_per_day" name="amount_of_alcohol_consumption_per_day" placeholder="Enter amount in liters">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

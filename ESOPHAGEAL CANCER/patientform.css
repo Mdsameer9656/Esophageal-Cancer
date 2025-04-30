@@ -1,0 +1,76 @@
+/* General Body Styling */
+body {
+    background-image: url('https://pbs.twimg.com/media/FsQF4vSWIBMm5Ka.jpg'); /* Background image */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    font-family: Arial, sans-serif; /* Clean font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+h2 {
+    color: white; /* Dark red header text */
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border: 2px solid darkred; /* Border with dark red color */
+    padding: 10px; /* Optional: Add some padding inside the border */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+/* Form Container Styling */
+form {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border: 2px solid darkred;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    width: 50%; /* Adjust form width */
+}
+
+/* Label Styling */
+label {
+    color: darkred; /* Dark red label text */
+    font-weight: bold;
+    display: block; /* Ensures proper spacing */
+    margin-bottom: 5px;
+}
+
+/* Input and Select Field Styling */
+input,
+select {
+    width: 100%; /* Full width for fields */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid darkred;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Button Styling */
+button {
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full-width button */
+}
+
+    /* Button Hover Effect */
+    button:hover {
+        background-color: #b30000; /* Slightly darker red on hover */
+    }
+
+/* Form Shadow Effect */
+form:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}

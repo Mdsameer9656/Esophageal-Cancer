@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Search</title>
+    <link rel="stylesheet" type="text/css" href="searchPatient.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <h2>Patient Search</h2>
+            <form class="search-form" action="searchPatients.js" method="get">
+                <input type="text" class="search-input" name="query" placeholder="Enter search query">
+                <button type="submit" class="search-button">Search</button>
+            </form>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Ethnicity</th>
+                        <th>Educational Level</th>
+                        <th>Occupation</th>
+                        <th>Socioeconomic Status</th>
+                        <th>Access to Healthcare</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table body will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="searchPatient.js"></script>
+</body>
+</html>
